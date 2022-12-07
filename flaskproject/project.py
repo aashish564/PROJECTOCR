@@ -36,7 +36,7 @@ cv2.imshow("Original", gray)
 cv2.waitKey(2000)
 
 # the temporary file
-#text = pytesseract.image_to_string(Image.open(filename), lang='eng')
+text = pytesseract.image_to_string(Image.open('D:\\testworkspace\\demo\\test1.jpg', mode='r'))
 #os.remove(filename)
 print(text)
 
