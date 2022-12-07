@@ -15,7 +15,7 @@ cv2.imshow("Original", image)
 #print(image.shape)
 cv2.waitKey(2000)
 '''
-image = cv2.imread("sample.jpg")
+'''image = cv2.imread("sample.jpg")
 
 ''' Tune the below 3 lines to get the better text incase something is broken in your image'''
 
@@ -28,16 +28,16 @@ text = pytesseract.image_to_string(thresh, config="psm 6")
 
 
 # write othe grayscale image to disk as a temporary file so we can
-# apply OCR to it
+# apply OCR to it'''
 filename = "{}.png".format(os.getpid())
-cv2.imwrite(filename, gray)
+'''cv2.imwrite(filename, gray)
 cv2.imshow("Original", gray)
 #print(image.shape)
 cv2.waitKey(2000)
-
+'''
 # the temporary file
 text = pytesseract.image_to_string(Image.open('D:\\testworkspace\\demo\\test1.jpg', mode='r'))
-#os.remove(filename)
+os.remove(filename)
 print(text)
 
 # show the output images
